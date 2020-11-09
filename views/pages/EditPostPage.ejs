@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+<link rel='stylesheet' href='/style-other-pages.css'/> 
+</head>
+<body>
+<header>
+    <title>Edit Post</title>
+</header>
+<div class="background-image">
+<div class="container">
+    <form action="http://localhost:3000/post/edit/<%= post.id %>" method="POST">
+        <ul class="elements">
+            <li>
+                Edit post title: <br><input type="text" id="title" name="title" value='<%= post.title %>'>
+            </li>
+            <li>
+                Edit post content: <br><textarea id="content" name="content"><%= post.content %></textarea>
+            </li>
+        </ul>
+    <button type="submit" id="submit-post-button">Submit edited Post</button>
+    </form>
+    <a class="go-back-home" href="/"> Go back to Home</a>
+    
+</div>
+</div>
+<div class="pading-bottom">
+    <p></p> 
+</div> 
+
+
+<%- include('../partials/footer') %>

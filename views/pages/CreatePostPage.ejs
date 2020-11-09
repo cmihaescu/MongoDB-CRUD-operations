@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+<link rel='stylesheet' href='/style-other-pages.css'/> 
+</head>
+<body>
+<header>
+    <title>Create Post</title>
+</header>
+<div class="background-image">
+<div class="container">
+    <form action="http://localhost:3000/CreatePostPage/createPost" method="POST">
+        <ul class="elements">
+            <li>
+               New Post title: <br><input type="text" id="title" name="title" placeholder="Your Post Title">
+            </li>
+            <li>
+                New Post content: <br><textarea name="content" id="content" placeholder="Your Post content"></textarea>
+            </li>
+        </ul>
+        <button id="submit-post-button">Submit</button>
+    </form>
+    <a class="go-back-home" href="/"> Go back to Home</a>
+</div>
+</div>
+<div class="pading-bottom">
+    <p></p> 
+</div> 
+<%- include('../partials/footer') %>
