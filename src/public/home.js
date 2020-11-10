@@ -1,4 +1,3 @@
-const numberOfArticles =document.getElementsByTagName("h2").length
 const goBackButton= document.querySelectorAll("#back-up-btn");
 const goBackTarget = document.querySelector("#h1");
 const articleLinkBtn = document.querySelectorAll(".scroll-to-post")
