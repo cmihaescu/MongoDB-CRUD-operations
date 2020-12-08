@@ -38,7 +38,7 @@ h1 {
 .container-post {
 	margin: auto;
 	padding-bottom: 5%;
-	width: 75%;
+	max-width: 70%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -49,8 +49,9 @@ h1 {
 
 .post {
 	text-align: justify;
-  	text-justify: inter-word;
-	width: 100%;
+	  text-justify: inter-word;
+	  min-width: 70%;
+	max-width: 70%;
 	word-wrap: break-word;
 	padding-bottom: 3%;
 }
