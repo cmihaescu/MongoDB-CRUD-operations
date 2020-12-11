@@ -37,16 +37,21 @@ const { MongoClient } = require("mongodb");
 const mongoose = require('mongoose');
 const express = require('express');
 
-const getMongoUri = () => {
-  // Datele din process.env sunt cele din fișierul .env, dacă nu există, trebuie creat după modelul .env.example
-  const user = encodeURIComponent(process.env.mongoUser);
-  const pass = encodeURIComponent(process.env.mongoPass);
-  const url = process.env.mongoUrl;
-  return `mongodb+srv://${user}:${pass}@${url}`
-};
+// const getMongoUri = () => {
+//   // Datele din process.env sunt cele din fișierul .env, dacă nu există, trebuie creat după modelul .env.example
+//   const user = encodeURIComponent(process.env.mongoUser);
+//   const pass = encodeURIComponent(process.env.mongoPass);
+//   const url = process.env.mongoUrl;
+//   return `mongodb+srv://${user}:${pass}@${url}`
+// };
 
-// Replace the uri string with your MongoDB deployment's connection string.
-const uri = getMongoUri();
+// // Replace the uri string with your MongoDB deployment's connection string.
+// const uri = getMongoUri();
+mongoUser="Cornel"
+mongoPass="e2dmxcg28Q5AYkUG"
+mongoUrl="mongooseproject.etg4i.mongodb.net/test?authSource=admin&replicaSet=atlas-pv4dlg-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true"
+
+const uri = `mongodb+srv://${mongoUser}:${mongoPass}@${mongoUrl}`
 
 //CONNECT WITH MONGOOSE
 
